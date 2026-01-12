@@ -50,9 +50,12 @@ The database allows the owner to answer critical questions such as:
 📄 **License**
 This project is distributed under the MIT license. Its purpose is strictly educational and research-based.
 
+---
+
 **Author:** JUAN S. 
 
 **Contact:** https://github.com/johnyse99
+
 
 
 
