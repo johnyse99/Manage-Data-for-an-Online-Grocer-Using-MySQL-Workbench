@@ -45,7 +45,8 @@ The database allows the owner to answer critical questions such as:
 - What is the total profit generated per sale after calculating purchase costs?
 - Which categories are performing best in terms of sales volume?
 
-## Author
+**Author:** JUAN S. 
 
-_Project developed as part of the Coursera Data Analysis Professional Certificate._
+**Contact:** https://github.com/johnyse99
+
 
