@@ -6,6 +6,9 @@ Greenspot Grocer is a rapidly growing family-owned online grocery store. This pr
 
 The goal is to eliminate data redundancy, ensure data integrity through normalization (3NF), and provide a foundation for business expansion.
 
+<img width="1489" height="902" alt="preview" src="https://github.com/user-attachments/assets/241a8a12-9044-4f47-b1f1-8877adedb353" />
+
+
 ## Key Features
 
 - **3NF Normalization**: Minimized data redundancy by separating Vendors, Products, Units, and Categories into dedicated tables.
@@ -45,3 +48,4 @@ The database allows the owner to answer critical questions such as:
 ## Author
 
 _Project developed as part of the Coursera Data Analysis Professional Certificate._
+
