@@ -43,6 +43,14 @@ To resolve these issues, the data will be normalized into the following tables:
     - Records sales to customers.
     - **Primary Key:** `sale_id`.
     - **Foreign Keys:** `item_num` (refers to `Products`), `customer_id` (refers to `Customers`).
+  
+---
+
+<img width="1489" height="902" alt="greenspot_db_model" src="https://github.com/user-attachments/assets/94b88d11-9bd6-46d2-9cf8-db1ec4de1049" />
+
+_Note: The EER Diagram will be represented via the SQL schema implementation._
+
+---
 
 ## 3. Scalability and Benefits
 
@@ -50,11 +58,7 @@ To resolve these issues, the data will be normalized into the following tables:
 - **Efficiency:** Data is stored once. Updates to a vendor's address are done in one place.
 - **Growth:** The system can easily accommodate new features like employee tracking, store locations, or discount codes by adding new tables and relationships without affecting existing data structures.
 
----
-
-<img width="1489" height="902" alt="greenspot_db_model" src="https://github.com/user-attachments/assets/94b88d11-9bd6-46d2-9cf8-db1ec4de1049" />
 
 
-_Note: The EER Diagram will be represented via the SQL schema implementation._
 
 
