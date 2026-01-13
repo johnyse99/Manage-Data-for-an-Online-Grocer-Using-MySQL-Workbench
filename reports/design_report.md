@@ -4,15 +4,6 @@
 
 The original dataset in `GreenspotDataset.csv` presents several issues common in flat-file storage that hinder scalability and data integrity:
 
-### Identified Anomalies and Issues
-
-- **Data Redundancy:** Vendor information (names and addresses) is repeated every time a purchase is made. This wastes space and increases the risk of data entry errors.
-- **Update Anomalies:** If a vendor changes their address, we have to update multiple rows. If we miss one, the data becomes inconsistent.
-- **Insertion Anomalies:** We cannot store a new vendor's information without having a specific product purchase associated with them in the same row.
-- **Deletion Anomalies:** If we delete a product record, we might lose the only record of a vendor or a customer.
-- **Mixed Concerns:** The file mixes inventory data (quantity on hand), purchase data (from vendors), and sales data (to customers) in a single row, which is logically confusing and difficult to query.
-- **Inconsistent Formatting:** The "Unit" column has variations (e.g., "12 ounce can" vs "12 oz can").
-
 ## 2. Proposed Relational Design
 
 To resolve these issues, the data will be normalized into the following tables:
@@ -102,11 +93,23 @@ _Note: The EER Diagram will be represented via the SQL schema implementation._
 
 ---
 
-## 4. Scalability and Benefits
+## Insights and Conclusions
+
+### Identified Anomalies and Issues
+
+- **Data Redundancy:** Vendor information (names and addresses) is repeated every time a purchase is made. This wastes space and increases the risk of data entry errors.
+- **Update Anomalies:** If a vendor changes their address, we have to update multiple rows. If we miss one, the data becomes inconsistent.
+- **Insertion Anomalies:** We cannot store a new vendor's information without having a specific product purchase associated with them in the same row.
+- **Deletion Anomalies:** If we delete a product record, we might lose the only record of a vendor or a customer.
+- **Mixed Concerns:** The file mixes inventory data (quantity on hand), purchase data (from vendors), and sales data (to customers) in a single row, which is logically confusing and difficult to query.
+- **Inconsistent Formatting:** The "Unit" column has variations (e.g., "12 ounce can" vs "12 oz can").
+
+### Scalability and Benefits
 
 - **Integrity:** Foreign keys ensure that we cannot have a sale for a non-existent product or customer.
 - **Efficiency:** Data is stored once. Updates to a vendor's address are done in one place.
 - **Growth:** The system can easily accommodate new features like employee tracking, store locations, or discount codes by adding new tables and relationships without affecting existing data structures.
+
 
 
 
