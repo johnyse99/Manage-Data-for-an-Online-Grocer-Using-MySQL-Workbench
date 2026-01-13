@@ -49,4 +49,8 @@ To resolve these issues, the data will be normalized into the following tables:
 
 ---
 
+<img width="1489" height="902" alt="greenspot_db_model" src="https://github.com/user-attachments/assets/94b88d11-9bd6-46d2-9cf8-db1ec4de1049" />
+
+
 _Note: The EER Diagram will be represented via the SQL schema implementation._
+
