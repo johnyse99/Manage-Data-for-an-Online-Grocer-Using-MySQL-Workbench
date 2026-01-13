@@ -71,9 +71,26 @@ _Note: The EER Diagram will be represented via the SQL schema implementation._
 
 **insert_new_product.sql**
 - Script to add a new product following 3NF rules
- We need to ensure parent records exist or create them
+- We need to ensure parent records exist or create them
 
 <img width="926" height="407" alt="imagen" src="https://github.com/user-attachments/assets/e637bf0e-1a43-4167-8dbd-f67c57d4df40" />
+
+
+--
+
+**check_relationships.sql**
+- Script to verify database relationships (Foreign Keys)
+- Proves that all tables are correctly linked
+
+<img width="640" height="484" alt="imagen" src="https://github.com/user-attachments/assets/e921e630-b4bc-4e6b-af4b-bfbf0226f6e8" />
+
+--
+
+**business_report_query.sql**
+- Business Query: Full Sales and Profitability Report
+- Demonstrates retrieval from all related tables in a single query
+
+<img width="612" height="497" alt="imagen" src="https://github.com/user-attachments/assets/693ee9f1-08a2-47d1-88e9-4de8e34db977" />
 
 
 
@@ -84,6 +101,7 @@ _Note: The EER Diagram will be represented via the SQL schema implementation._
 - **Integrity:** Foreign keys ensure that we cannot have a sale for a non-existent product or customer.
 - **Efficiency:** Data is stored once. Updates to a vendor's address are done in one place.
 - **Growth:** The system can easily accommodate new features like employee tracking, store locations, or discount codes by adding new tables and relationships without affecting existing data structures.
+
 
 
 
