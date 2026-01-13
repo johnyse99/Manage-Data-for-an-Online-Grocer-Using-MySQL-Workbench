@@ -65,6 +65,15 @@ _Note: The EER Diagram will be represented via the SQL schema implementation._
 
 <img width="830" height="638" alt="imagen" src="https://github.com/user-attachments/assets/b84f19c1-7d7a-484b-b5cc-60e6aee02b2f" />
 
+--
+
+**insert_new_product.sql**
+-- Script to add a new product following 3NF rules
+-- We need to ensure parent records exist or create them
+
+<img width="926" height="407" alt="imagen" src="https://github.com/user-attachments/assets/e637bf0e-1a43-4167-8dbd-f67c57d4df40" />
+
+
 
 ---
 
@@ -73,6 +82,7 @@ _Note: The EER Diagram will be represented via the SQL schema implementation._
 - **Integrity:** Foreign keys ensure that we cannot have a sale for a non-existent product or customer.
 - **Efficiency:** Data is stored once. Updates to a vendor's address are done in one place.
 - **Growth:** The system can easily accommodate new features like employee tracking, store locations, or discount codes by adding new tables and relationships without affecting existing data structures.
+
 
 
 
